@@ -1,10 +1,133 @@
-body {
-	margin: 0 auto;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
 }
 
-.header {
-    width: 100%;
-    height: 1080px;
-    background-image: url("/img/wave_top.svg");
+body {
+    margin: 0 auto;
+}
+
+/* top page - header */
+
+section#top_page {
+    background: url(/img/wave_top.svg) no-repeat center; /*add fixed to see difference*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+    height: 90vh;    
+}
+
+.top_page_container {
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.plonge_container{
+    margin-bottom: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.plonge_container::after{ /* barre verticale fixe :c */
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 2px;
+    height: 18em;
+    bottom: 4;
+}
+
+#plonge {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #FFF;
+}
+
+/* texte de presentation */
+
+section#presentation {
+    background-color: #B5C4C6;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+.presentation_container {
+    height: 50vh;
+    width: 50vh;
+    color: #2E2EFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cestquoi {
+    font-style: oblique;
+    position: relative;
+}
+
+#paragraphe {
+    text-align: justify;
+}
+
+.sticky::before {
+    content: "";
+	display: block;
+    margin-bottom: 10px;
+	border-bottom: 2px solid #2E2EFF;
+	padding-top: .5rem;
+}
+
+/* sticky menu */
+
+.sticky {
+	background-color: #B5C4C6;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+.sticky_container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 50px 0 50px;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: #2E2EFF;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.sticky::after {
+    content: "";
+	display: block;
+    margin-top: 10px;
+	border-bottom: 2px solid #2E2EFF;
+	padding-top: .5rem;
+}
+
+/* people part*/
+
+section#people {
+    background-color: #B5C4C6;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+}
+
+.people_container {
+    height: 150vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
