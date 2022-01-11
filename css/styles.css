@@ -9,50 +9,27 @@ body {
     margin: 0 auto;
 }
 
-/* top page - header */
+/*
+    top page - header
+*/
 
 section#top_page {
-    background: url(/img/wave_top.svg) no-repeat center; /*add fixed to see difference*/
+    background: url(/img/HEADER.svg) no-repeat center; /*add fixed to see difference */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 90vh;    
+    height: 82vh; /* hauteur de l'image d'accueil par rapport a la hauteur totale de la page */
 }
 
-.top_page_container {
-    height: 90vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-}
-.plonge_container{
-    margin-bottom: 200px;
-    text-align: center;
-    position: relative;
-}
-
-.plonge_container::after{ /* barre verticale fixe :c */
-    content: "";
-    position: absolute;
-    background-color: #fff;
-    width: 2px;
-    height: 18em;
-    bottom: 4;
-}
-
-#plonge {
-    font-size: 1.5em;
-    font-weight: 400;
-    color: #FFF;
-}
-
-/* texte de presentation */
+/*
+    texte de presentation
+*/
 
 section#presentation {
     background-color: #B5C4C6;
-    height: 60vh;
+    height: 50vh;
+    min-height:100%;
     display: flex;
     justify-content: center;
 }
@@ -68,6 +45,7 @@ section#presentation {
 }
 
 #cestquoi {
+    font-size: small;
     font-style: oblique;
     position: relative;
 }
@@ -76,6 +54,10 @@ section#presentation {
     text-align: justify;
 }
 
+/*
+    sticky menu
+*/
+
 .sticky::before {
     content: "";
 	display: block;
@@ -83,8 +65,6 @@ section#presentation {
 	border-bottom: 2px solid #2E2EFF;
 	padding-top: .5rem;
 }
-
-/* sticky menu */
 
 .sticky {
 	background-color: #B5C4C6;
@@ -96,7 +76,6 @@ section#presentation {
 .sticky_container {
     display: flex;
     justify-content: space-around;
-    margin: 0 50px 0 50px;
 }
 
 a {
@@ -115,19 +94,16 @@ a {
 	padding-top: .5rem;
 }
 
-/* people part*/
+/*
+    people part
+*/
 
 section#people {
-    background-color: #B5C4C6;
-    height: 150vh;
+    background-color: #276f79;
+    max-height: fit-content;
+    height: 1100px;
     display: flex;
-    justify-content: center;
-}
-
-.people_container {
-    height: 150vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
