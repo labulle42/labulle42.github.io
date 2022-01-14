@@ -14,7 +14,7 @@ html, body {
   }
 
 section.top-page {
-    background: url('/img/HEADER.svg') center;
+    background: url('/img/HEADER.svg') center fixed;
     background-size: cover; /*l'image ne se répète pas si on agrandi la fenêtre*/
     height: 80vh;
     padding: 25px;
