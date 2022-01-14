@@ -198,17 +198,3 @@ footer {
     height: 60vh;
     padding: 25px;
 }
-
-
-
-.copy {
-    width: 100%;
-    padding: 20px 40px;
-    max-width: 1000px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    opacity: .3;
-    font-size: .75rem;
-    font-weight: 500;
-}
