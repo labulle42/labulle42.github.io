@@ -54,6 +54,7 @@ section.top-page {
 */
 
 .sticky {
+    z-index: 1;
     width: 100%;
 	background-color: #B5C4C6;
 	position: -webkit-sticky;
